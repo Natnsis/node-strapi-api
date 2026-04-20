@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_brands",
+  "info": {
+    "displayName": "Brand"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
