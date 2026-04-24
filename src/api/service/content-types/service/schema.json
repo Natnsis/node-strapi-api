@@ -11,11 +11,24 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "icon": {
+      "type": "string"
+    },
     "header": {
       "type": "string"
     },
     "subHeader": {
       "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     },
     "category": {
       "type": "component",

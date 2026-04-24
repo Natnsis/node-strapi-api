@@ -20,6 +20,17 @@ export interface SharedBrand extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedMedia extends Struct.ComponentSchema {
+  collectionName: 'components_shared_media';
+  info: {
+    displayName: 'media';
+  };
+  attributes: {
+    src: Schema.Attribute.Text;
+    type: Schema.Attribute.String;
+  };
+}
+
 export interface SharedServiceCategory extends Struct.ComponentSchema {
   collectionName: 'components_shared_service_categories';
   info: {
@@ -37,7 +48,7 @@ export interface SharedServiceItem extends Struct.ComponentSchema {
     displayName: 'service-item';
   };
   attributes: {
-    icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    icon: Schema.Attribute.String;
     image: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',
       true
@@ -51,6 +62,7 @@ declare module '@strapi/strapi' {
     export interface ComponentSchemas {
       'shared.badge': SharedBadge;
       'shared.brand': SharedBrand;
+      'shared.media': SharedMedia;
       'shared.service-category': SharedServiceCategory;
       'shared.service-item': SharedServiceItem;
     }

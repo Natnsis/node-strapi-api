@@ -14,16 +14,6 @@
     "name": {
       "type": "string"
     },
-    "platformLogo": {
-      "type": "media",
-      "multiple": true,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "description": {
       "type": "text"
     },
@@ -39,6 +29,9 @@
         "videos",
         "audios"
       ]
+    },
+    "icon": {
+      "type": "string"
     }
   }
 }

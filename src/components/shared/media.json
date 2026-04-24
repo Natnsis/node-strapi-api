@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_media",
+  "info": {
+    "displayName": "media"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "src": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}
